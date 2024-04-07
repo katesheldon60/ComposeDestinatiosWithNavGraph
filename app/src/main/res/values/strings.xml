@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ComposeDestinatiosWithNavGraph</string>
+    <string name="main_screen">Main</string>
+    <string name="calendar_screen">Calendar</string>
+    <string name="contacts_screen">Contacts</string>
+    <string name="documents_screen">Documents</string>
+</resources>
