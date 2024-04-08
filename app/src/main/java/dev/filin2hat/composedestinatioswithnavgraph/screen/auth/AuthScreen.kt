@@ -16,7 +16,6 @@ import com.ramcosta.composedestinations.navigation.popUpTo
 import dev.filin2hat.composedestinatioswithnavgraph.screen.NavGraphs
 import dev.filin2hat.composedestinatioswithnavgraph.screen.destinations.HomeScreenDestination
 
-
 @RootNavGraph(start = true)
 @Destination
 @Composable

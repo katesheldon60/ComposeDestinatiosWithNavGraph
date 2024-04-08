@@ -11,14 +11,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
-import dev.filin2hat.composedestinatioswithnavgraph.navigation.HomeNavGraph
+import dev.filin2hat.composedestinatioswithnavgraph.model.User
+import dev.filin2hat.composedestinatioswithnavgraph.navigation.AppNavGraph
 
-@HomeNavGraph
+@AppNavGraph
 @Destination
 @Composable
 fun ContentScreen(
-    id: String,
-    displayText: String,
+    user: User,
     navigator: DestinationsNavigator
 ) {
     Column(
@@ -28,7 +28,7 @@ fun ContentScreen(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "$id - $displayText")
+        Text(text = "${user.id}\n${user.name}\n${user.createdAt}")
         Spacer(modifier = Modifier.height(32.dp))
         Button(onClick = {
             navigator.popBackStack()

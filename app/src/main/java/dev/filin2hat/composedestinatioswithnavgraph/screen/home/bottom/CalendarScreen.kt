@@ -8,9 +8,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
-import dev.filin2hat.composedestinatioswithnavgraph.navigation.HomeNavGraph
+import dev.filin2hat.composedestinatioswithnavgraph.navigation.AppNavGraph
 
-@HomeNavGraph
+@AppNavGraph
 @Destination
 @Composable
 fun CalendarScreen(

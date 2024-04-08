@@ -2,6 +2,7 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("com.google.devtools.ksp") version "1.9.23-1.0.20"
+    id("kotlin-parcelize")
 }
 
 android {
@@ -61,8 +62,8 @@ dependencies {
     implementation("androidx.compose.material3:material3")
 
     // Compose Destinations
-    implementation("io.github.raamcosta.compose-destinations:animations-core:1.10.2")
-    ksp("io.github.raamcosta.compose-destinations:ksp:1.10.2")
+    implementation("io.github.raamcosta.compose-destinations:animations-core:1.11.2-alpha")
+    ksp("io.github.raamcosta.compose-destinations:ksp:1.11.2-alpha")
 
     // Testing
     testImplementation("junit:junit:4.13.2")

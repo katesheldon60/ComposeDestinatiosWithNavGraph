@@ -1,4 +1,4 @@
-package dev.filin2hat.composedestinatioswithnavgraph.screen.home.bottom
+package dev.filin2hat.composedestinatioswithnavgraph.navigation
 
 import androidx.annotation.StringRes
 import androidx.compose.material.icons.Icons

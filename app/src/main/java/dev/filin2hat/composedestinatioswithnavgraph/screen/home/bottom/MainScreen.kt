@@ -12,14 +12,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.ramcosta.composedestinations.annotation.Destination
 import com.ramcosta.composedestinations.navigation.DestinationsNavigator
-import dev.filin2hat.composedestinatioswithnavgraph.navigation.HomeNavGraph
+import dev.filin2hat.composedestinatioswithnavgraph.model.User
+import dev.filin2hat.composedestinatioswithnavgraph.navigation.AppNavGraph
 import dev.filin2hat.composedestinatioswithnavgraph.screen.destinations.ContentScreenDestination
+import java.time.LocalDateTime
 
-@HomeNavGraph(start = true)
+@AppNavGraph(start = true)
 @Destination
 @Composable
 fun MainScreen(
-    id: String?,
     navigator: DestinationsNavigator,
 ) {
     Box(
@@ -29,7 +30,13 @@ fun MainScreen(
         Text(text = "Main Screen")
         Spacer(modifier = Modifier.height(32.dp))
         Button(onClick = {
-            navigator.navigate(ContentScreenDestination(id = "222", displayText = "Content Screen"))
+            navigator.navigate(ContentScreenDestination(
+                User(
+                    id = "2654584",
+                    name = "John Doe",
+                    createdAt = LocalDateTime.now()
+                )
+            ))
         }) {
             Text(text = "Go to Content Screen")
         }
